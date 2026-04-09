@@ -1,0 +1,17 @@
+Zum Compilen NASM nutzen
+
+nasm -f bin hello_world.asm -o hello_world.bin
+
+Zum Ausführen mit QEMU
+
+C:\Program Files\qemu\qemu-system-x86_64 -drive format=raw,file=hello_boot.bin
+
+qemu-system-x86_64 -drive format=raw,file=hello_boot.bin
+
+// Erstellt golbale Variable 
+
+setx PATH "%PATH%;C:\Program Files\qemu"
+
+// Falls C:\Program Files\qemu\qemu-system-x86_64 -drive format=raw,file=hello_boot.bin nicht funktioniert. 
+
+C:\Program Files\qemu> .\qemu-system-x86_64.exe -drive format=raw,file=C:\Users\benutzer\AppData\Local\bin\NASM\hello_world.bin

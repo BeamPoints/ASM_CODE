@@ -15,3 +15,18 @@ setx PATH "%PATH%;C:\Program Files\qemu"
 // Falls C:\Program Files\qemu\qemu-system-x86_64 -drive format=raw,file=hello_boot.bin nicht funktioniert. 
 
 C:\Program Files\qemu> .\qemu-system-x86_64.exe -drive format=raw,file=C:\Users\benutzer\AppData\Local\bin\NASM\hello_world.bin
+
+
+//Ort für Installation über .exe & Winget
+
+//Wichtig in Powershell Ausführen
+winget install NASM
+winget install QEMU
+
+// Links zum entwickler website
+https://www.nasm.us
+https://www.qemu.org
+
+// Links zur documentation
+https://www.nasm.us/docs.html
+https://www.qemu.org/docs/master/
